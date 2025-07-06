@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { CarMonitorComponent } from './features/components/car-monitor/car-monitor.component';
-import { LanguageSwitcherComponent } from './shared/components/language-switcher/language-switcher.component';
-import { TranslocoPipe } from '@ngneat/transloco';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 
@@ -10,8 +8,6 @@ import { FooterComponent } from './shared/components/footer/footer.component';
   standalone: true,
   imports: [
     CarMonitorComponent,
-    LanguageSwitcherComponent,
-    TranslocoPipe,
     HeaderComponent,
     FooterComponent,
   ],

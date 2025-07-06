@@ -2,26 +2,43 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
 
-## Development server
+# 🚗 Car Speed Monitor
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This is a simple Angular application built as part of a frontend coding challenge.
 
-## Code scaffolding
+## 📋 Project Description
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The Car Speed Monitor simulates and displays the current speed of two cars with live updates. If a car exceeds the speed limit of 100 km/h, it is visually highlighted. The app also shows driver information (Firstname, Lastname, Age) fetched from a public API.
 
-## Build
+## 🛠 Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- ✅ Live speed updates using **RxJS**
+- ✅ Speed limit warning (highlight > 100 km/h)
+- ✅ Driver data fetched from [dummyjson.com](https://dummyjson.com/)
+- ✅ Responsive UI with **Tailwind CSS**
+- ✅ Language switcher with **Transloco** (English and Italian)
+- ✅ Code formatting with **Prettier**
+- ✅ Git hooks with **Husky**
 
-## Running unit tests
+## 📦 Tech Stack
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Angular 17+**
+- **Tailwind CSS**
+- **RxJS**
+- **Transloco**
+- **Prettier + Husky**
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 🌐 Demo
+🔗 Live Preview: https://car-speed-monitor.netlify.app/
+
+📦 GitHub Repo: https://github.com/miakate/car-speed-monitor
+
+
+
+## 🚀 Run Locally
+```bash
+npm install
+npm start

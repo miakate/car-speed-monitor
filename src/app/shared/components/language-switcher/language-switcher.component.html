@@ -3,12 +3,9 @@
     <button
       (click)="setLang(lang)"
       [class.border-primary]="activeLang === lang"
-      class="px-3 py-1 rounded-md border-2 text-sm font-medium transition
-           hover:border-primary hover:text-destructive
-           text-muted border-border"
+      class="px-3 py-1 rounded-md border-2 text-sm font-medium transition hover:border-primary hover:text-destructive text-muted border-border"
     >
       {{ lang.toUpperCase() }}
     </button>
   }
-
 </div>

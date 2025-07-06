@@ -13,7 +13,7 @@ module.exports = {
         border: '#e2e8f0',
       },
       boxShadow: {
-        'destructive': '0 0 15px rgba(239, 68, 68, 0.3)',
+        destructive: '0 0 15px rgba(239, 68, 68, 0.3)',
       },
       fontFamily: {
         sans: ['"Space Grotesk"', '"Noto Sans"', 'sans-serif'],

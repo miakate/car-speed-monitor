@@ -10,15 +10,13 @@
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mt-10">
     @for (driver of drivers; track driver.id; let i = $index) {
-      <app-car-card
-        [driver]="driver"
-        [speed]="speeds[i]"
-        [carIndex]="i"
-      />
+      <app-car-card [driver]="driver" [speed]="speeds[i]" [carIndex]="i" />
     }
   </div>
 
-  <p class="text-center text-muted mt-10 text-sm md:text-base flex items-center justify-center gap-2 ">
+  <p
+    class="text-center text-muted mt-10 text-sm md:text-base flex items-center justify-center gap-2"
+  >
     <span class="material-icons-outlined text-base text-destructive">warning</span>
     {{ 'dashboard.warning' | transloco }}
   </p>

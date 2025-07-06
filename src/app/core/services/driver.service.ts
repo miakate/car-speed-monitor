@@ -9,8 +9,8 @@ export class DriverService {
   http = inject(HttpClient);
 
   getDrivers(): Observable<Driver[]> {
-    return this.http.get<{ users: Driver[] }>(environment.apiUrl).pipe(
-      map(response => response.users),
-    );
+    return this.http
+      .get<{ users: Driver[] }>(environment.apiUrl)
+      .pipe(map((response) => response.users));
   }
 }
