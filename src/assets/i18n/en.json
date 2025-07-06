@@ -1,0 +1,17 @@
+{
+  "app": {
+    "title": "Speed Monitor",
+    "footer": "© 2023 Speed Monitor App. All rights reserved."
+  },
+  "dashboard": {
+    "title": "Vehicle Speed Dashboard",
+    "description": "Real-time monitoring of vehicle speeds and driver information.",
+    "warning": "Speeds above 100 km/h are highlighted in red."
+  },
+  "warning": "Speeds above 100 km/h are highlighted in red.",
+  "car": "Car {{index}}",
+  "firstname": "Firstname",
+  "lastname": "Lastname",
+  "age": "Age",
+  "speed": "Speed"
+}

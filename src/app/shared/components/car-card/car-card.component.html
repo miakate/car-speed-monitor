@@ -1,0 +1,55 @@
+<div
+  class="p-6 rounded-xl border transition-all duration-300 ease-in-out"
+  [ngClass]="{
+    'border-destructive shadow-destructive': speed > limit,
+    'border-border shadow-lg': speed <= limit
+  }"
+>
+  <p class="text-lg font-medium text-muted mb-2">
+    {{ 'car' | transloco: {index: carIndex + 1} }}
+  </p>
+
+  <div class="flex flex-col md:flex-row items-center md:items-start md:justify-around w-full">
+    <div class="mb-4 md:mb-0 text-center md:text-left">
+      <span
+        class="text-6xl font-bold tracking-tighter"
+        [ngClass]="{
+          'text-destructive': speed > limit,
+          'text-text': speed <= limit
+        }"
+      >
+        {{ speed }}
+      </span>
+      <span
+        class="text-2xl font-medium ml-1"
+        [ngClass]="{
+          'text-destructive': speed > limit,
+          'text-slate-500': speed <= limit
+        }"
+      >
+        km/h
+      </span>
+    </div>
+
+    <div class="text-left space-y-1 md:ml-6">
+      <div>
+        <span class="text-sm font-medium text-muted">
+          {{ 'firstname' | transloco }}:
+        </span>
+        <span class="text-base text-text font-semibold">{{ driver.firstName }}</span>
+      </div>
+      <div>
+        <span class="text-sm font-medium text-muted">
+          {{ 'lastname' | transloco }}:
+        </span>
+        <span class="text-base text-text font-semibold">{{ driver.lastName }}</span>
+      </div>
+      <div>
+        <span class="text-sm font-medium text-muted">
+          {{ 'age' | transloco }}:
+        </span>
+        <span class="text-base text-text font-semibold">{{ driver.age }}</span>
+      </div>
+    </div>
+  </div>
+</div>

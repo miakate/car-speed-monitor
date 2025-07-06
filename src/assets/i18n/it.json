@@ -1,0 +1,17 @@
+{
+  "app": {
+    "title": "Monitoraggio Velocità",
+    "footer": "© 2023 App Monitoraggio Velocità. Tutti i diritti riservati."
+  },
+  "dashboard": {
+    "title": "Cruscotto Velocità Veicolo",
+    "description": "Monitoraggio in tempo reale della velocità e delle informazioni del conducente.",
+    "warning": "Le velocità superiori a 100 km/h sono evidenziate in rosso."
+  },
+  "warning": "Le velocità superiori a 100 km/h sono evidenziate in rosso.",
+  "car": "Auto {{index}}",
+  "firstname": "Nome",
+  "lastname": "Cognome",
+  "age": "Età",
+  "speed": "Velocità"
+}

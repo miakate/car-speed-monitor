@@ -1,4 +1,6 @@
 export const environment = {
   production: false,
-  githubApiUrl: 'https://api.github.com',
+  apiUrl: 'https://dummyjson.com/users?limit=2',
+  availableLangs: ['en', 'it'],
+  defaultLang: 'en',
 };

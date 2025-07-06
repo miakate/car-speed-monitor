@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #0c7ff2;
+  --destructive-color: #ef4444;
+  --background-color: #f8fafc;
+  --card-background-color: #ffffff;
+  --text-color: #1e293b;
+  --muted-text-color: #64748b;
+  --border-color: #e2e8f0;
+}
+
+body {
+  font-family: 'Space Grotesk', 'Noto Sans', sans-serif;
+}

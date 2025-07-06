@@ -1,21 +1,16 @@
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map, Observable } from 'rxjs';
-import { Driver } from '../interfaces/driver';
+import { Driver } from '../../shared/models/driver.model';
+import { environment } from '../../../environments/environment.prod';
 
 @Injectable({ providedIn: 'root' })
 export class DriverService {
-  constructor(private http: HttpClient) {}
+  http = inject(HttpClient);
 
   getDrivers(): Observable<Driver[]> {
-    return this.http.get<any>('https://dummyjson.com/users?limit=2').pipe(
-      map((res) =>
-        res.users.map((u: any) => ({
-          firstName: u.firstName,
-          lastName: u.lastName,
-          age: u.age,
-        })),
-      ),
+    return this.http.get<{ users: Driver[] }>(environment.apiUrl).pipe(
+      map(response => response.users),
     );
   }
 }
